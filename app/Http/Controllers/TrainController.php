@@ -12,7 +12,7 @@ class TrainController extends Controller
        
 
         //tutti i treni con la data di oggi
-        $trains = Train::where('departure','=','2024-05-27' )->get();
+        $trains = Train::whereDate('departure',today() )->get();
         return view('home', compact('trains'));
     }
 }

@@ -9,30 +9,28 @@
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">
-                            <span class="fw-bold">Azienda : </span> {{ $train->azienda}}
+                            <span class="fw-bold">Azienda : </span> {{ $train->company}}
                         </h5>
                         <hr>
                         <p class="card-text">
-                            <span class="fw-bold">Codice treno : </span> {{ $train->codice_treno}}
+                            <span class="fw-bold">Codice treno : </span> {{ $train->train_number}}
                         </p>
                         <p class="card-text">
-                            <span class="fw-bold">Stazione di partenza : </span> {{ $train->stazione_di_partenza}}
+                            <span class="fw-bold">Stazione di partenza : </span> {{ $train->start_station}}
                         </p>
                         <p class="card-text">
-                            <span class="fw-bold">Stazione di arrivo : </span> {{ $train->stazione_di_arrivo}}
+                            <span class="fw-bold">Stazione di arrivo : </span> {{ $train->end_station}}
                         </p>
                         <hr>
                         <h6 class="card-subtitle mb-2 text-muted">
-                            <span class="fw-bold">Giorno di partenza : </span> {{ $train->giorno_partenza}}
+                            <span class="fw-bold">Partenza : </span> {{ $train->departure}}
                         </h6>
+                    
                         <h6 class="card-subtitle mb-2 text-muted">
-                            <span class="fw-bold">Orario di partenza : </span> {{ $train->orario_di_partenza}}
-                        </h6>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                            <span class="fw-bold">Orario di arrivo : </span> {{ $train->orario_di_arrivo}}
+                            <span class="fw-bold">Arrivo : </span> {{ $train->arrival}}
                         </h6>
 
-                        {{-- <p class="{{$train->in_orario ? 'green' : 'red' }}">In orario</p> --}}
+                        
                     </div>
                 </div>
             </div>
