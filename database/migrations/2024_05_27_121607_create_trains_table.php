@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('end_station', 255);
             $table->dateTime('departure', precision: 0);
             $table->dateTime('arrival', precision: 0);
-            $table->unsignedSmallInteger('train_number');
+            $table->string('train_number');
             $table->unsignedTinyInteger('wagons');
             $table->boolean('on_time');
             $table->boolean('deleted');
